@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Certificate</title>
+    <link rel="stylesheet" href="/stylesheets/certificate.css">
+    <link rel="favicon" href="/images/logo.png">
+</head>
+
+<body>
+    <header>
+        <img src="/images/Certificate.png" alt="Certificate">
+        <h4>Get your certificate for</h4>
+        <h1> <a href="#" rel="noopener noreferrer">GITings</a></h1>
+    </header>
+    <main>
+        <!-- <h6>This form is no longer accepting responses</h6> -->
+
+        <label for="name">Type Your Name</label>
+        <input required type="text" name="Name" autocomplete="name" placeholder="Your Name" id="name" minlength="3"
+            maxlength="20">
+        <!-- <Button id="submitBtn">Download</Button> -->
+
+        <label for="name">Type Your Email Address</label>
+        <input required type="text" name="Name" autocomplete="name" placeholder="email@email.com" id="name" minlength="3"
+            maxlength="20">
+        <Button id="submitBtn">Verify & Download</Button>
+
+
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="/certificate/FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="/certificate/index.js"></script>
+</body>
+
+</html>
