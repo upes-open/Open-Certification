@@ -22,7 +22,7 @@ submitBtn.addEventListener("click", () => {
 });
 
 const generatePDF = async (name) => {
-  const existingPdfBytes = await fetch("./git.pdf").then((res) =>
+  const existingPdfBytes = await fetch("./filename.pdf").then((res) =>
     res.arrayBuffer()
   );
 
@@ -48,7 +48,7 @@ const generatePDF = async (name) => {
     y: 1300,
     size: 160,
     font: AntonFont,
-    color: rgb(0.635, 0.475, 0.173), //RGB Percentage
+    color: rgb(0.635, 0.475, 0.173),
   });
 
   // Serialize the PDFDocument to bytes (a Uint8Array)

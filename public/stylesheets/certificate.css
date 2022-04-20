@@ -14,7 +14,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 :root {
-    --dark-color: #211B31;
+    --dark-color: #fff;
   }
   
   body {
@@ -68,7 +68,7 @@ body{
   }
   
   button {
-    background: #35599E;
+    background: #48BB78;
     color: #fff;
     border: none;
     font-size: 0.8em;
@@ -78,20 +78,20 @@ body{
     cursor: pointer;
   }
   a {
-    color: #6492f6;
+    color: #48BB78;
   }
   
   /* dark mode css */
   @media (prefers-color-scheme: dark) {
     body {
       background: var(--dark-color);
-      color: #fff;
+      color: #000;
     }
     input,
     input:active {
       background: var(--dark-color);
       border-color: #fff;
-      color: #fff;
+      color: #000;
     }
   
     /* for styling the autocomplete style */
@@ -100,7 +100,7 @@ body{
     input:-webkit-autofill:focus,
     input:-webkit-autofill:active {
       transition: background-color 5000s ease-in-out 0s;
-      -webkit-text-fill-color: #fff !important;
+      -webkit-text-fill-color: #000 !important;
     }
   }
   
