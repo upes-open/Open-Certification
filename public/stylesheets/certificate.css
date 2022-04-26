@@ -24,7 +24,13 @@ body{
     font-size: 1.5em;
   }
   
-  h4 {
+  h4, h5 {
+    font-weight: normal;
+    margin-bottom: 5px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  h6 {
     font-weight: normal;
     margin-bottom: 5px;
   }
@@ -36,7 +42,8 @@ body{
   }
   
   img {
-    border-radius: 150%;
+    /*border-radius: 150%;*/
+    padding-top: 60px;
     height: 200px;
   }
   
