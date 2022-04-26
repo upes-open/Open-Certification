@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Certification System</title>
+  <link rel="stylesheet" href="/stylesheets/certificate.css">
+  <link rel="favicon" href="/images/logo.png">
+</head>
+
+<body>
+  <header>
+    <img src="/images/logo.png" alt="Certificate">
+    <!--<h4>Get your certificate for</h4>-->
+    <h1> <a href="#" rel="noopener noreferrer">Open Certification System</a></h1>
+  </header>
+  <main>
+    <h5>Open certification system enables administration to generate all kinds of certificates effectively in no time.
+    Be it any event participation certificate or the certification for winners, we have made it possible to reduce your
+    labour.</h5>
+    <h5> <a href="https://github.com/upes-open/Open-Certification" target="blank">View the source code on GitHub</a></h5>
+    <h5>Download your certificate for the most recent event from the link below.</h5>
+    <Button onclick="location.href ='/certificate'">Click here to Download</Button>
+    <!-- <h6>This form is no longer accepting responses</h6> -->
+  </main>
+  <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+  <script src="/certificate/FileSaver.js"></script>
+  <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+  <script src="/certificate/index.js"></script>
+</body>
+
 </html>
